@@ -21,6 +21,14 @@ input[type="button"],
 button {
   -webkit-appearance: none;
 }
+.inline-b-list {
+  letter-spacing: -3px;
+  font-size: 0;
+}
+.inline-b-fix {
+  letter-spacing: normal;
+  font-size: 12px;
+}
 
 /* public */
 .clearfix:after{
@@ -632,7 +640,8 @@ fieldset[disabled] .btn-link:focus {
 .modal-dialog {
     position: relative;
     width: 600px;
-    margin: 30px auto;
+    margin: 0px auto;
+    margin-top: 25%;
 }
 .modal-sm {
     width: 300px;
@@ -672,7 +681,8 @@ fieldset[disabled] .btn-link:focus {
 }
 .modal-title {
     margin: 0;
-    line-height: 1.42857143;
+    padding: 10px;
+    text-align: center;
 }
 .modal-body {
     position: relative;
@@ -693,7 +703,7 @@ fieldset[disabled] .btn-link:focus {
     text-align: center;
 }
 .modal-mobile .modal-dialog{
-    width: 280px;
+    width: 85%;
 }
 .modal-mobile .modal-footer {
     text-align: center;
@@ -720,7 +730,6 @@ fieldset[disabled] .btn-link:focus {
 }
 .modal-mobile a.btn-alert{
     display: block;
-    width: 90%;
     margin: 0 auto;
 }
 .modal-mobile .btn-confirm-no,.modal-mobile .btn-confirm-yes {
@@ -1095,4 +1104,50 @@ a[data-rel="accordion"]:after {
   color: #ccc;
   top: 50%;
   margin-top: -8px;
+}
+
+/*  */
+.m-container {
+  height: 100%;
+}
+.m-page {
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+  box-sizing:border-box;
+}
+.m-header {
+  position: relative;
+  height: 50px;
+  background: #3bb4f2;
+  line-height: 29px;
+  font-size: 20px;
+  color: #FFF;
+  padding: 10px;
+  box-shadow: 0 0 3px rgba(0,0,0,.15);
+}
+.m-header h1 {
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+.m-header-left {
+  display: inline-block;
+  position: absolute;
+  color: #eee;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  padding: 0 10px;
+  border-radius: 2px;
+  left: 10px; 
+}
+.m-header-right {
+  display: inline-block;
+  position: absolute;
+  color: #eee;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  padding: 0 10px;
+  right: 10px; 
 }
