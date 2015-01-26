@@ -21,6 +21,10 @@ input[type="button"],
 button {
   -webkit-appearance: none;
 }
+.inline-b {
+  display: inline-block;
+  vertical-align: top;
+}
 .inline-b-list {
   letter-spacing: -3px;
   font-size: 0;
@@ -641,7 +645,7 @@ fieldset[disabled] .btn-link:focus {
     position: relative;
     width: 600px;
     margin: 0px auto;
-    margin-top: 25%;
+    margin-top: 50px;
 }
 .modal-sm {
     width: 300px;
